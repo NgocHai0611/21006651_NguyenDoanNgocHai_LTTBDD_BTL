@@ -6,11 +6,16 @@ import { ExternalLink } from "@/components/ExternalLink";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
-import Electronics from "@/components/Content/ContentHome/Electronic";
-import FreshFruits from "@/components/Content/ContentHome/Fruits";
+import ModalFilter from "@/components/Content/Modal/ModalFilter";
+import ProductDetails1 from "@/components/Content/ProductDetails/ProductsDetails1";
+import ProductDetails2 from "@/components/Content/ProductDetails/ProductsDetails2";
+import CheckOut from "@/components/Content/CheckOut/CheckOut";
+import MethodPayment from "@/components/Payment/ChoseMethodPayment";
+import ResultPayMent from "@/components/Payment/ResultPayment";
+import FeedBackProduct from "@/components/FeedBack/ProductFeedBack";
 
 export default function TabTwoScreen() {
-  return <FreshFruits></FreshFruits>;
+  return <FeedBackProduct></FeedBackProduct>;
 }
 
 const styles = StyleSheet.create({
