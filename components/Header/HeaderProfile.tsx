@@ -14,23 +14,25 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 export function HeaderProfile({ titleHeader }) {
   return (
     <View style={styles.container}>
-      <View style={styles.leftSection}>
-        <AntDesign name="left" size={25} color="black" />
-        <Text style={stylesGobal.textTitle}>{titleHeader}</Text>
-      </View>
+      <View style={styles.layoutContainer}>
+        <View style={styles.leftSection}>
+          <AntDesign name="left" size={25} color="black" />
+          <Text style={stylesGobal.textTitle}>{titleHeader}</Text>
+        </View>
 
-      <View style={styles.rightSection}>
-        <AntDesign name="shoppingcart" size={25} color="black" />
-        <ImageBackground
-          source={require("../../assets/images/AvatarHeader.png")}
-          style={{
-            width: 30,
-            height: 30,
-            backgroundColor: "green",
-            borderRadius: 50,
-          }}
-          resizeMode="cover"
-        ></ImageBackground>
+        <View style={styles.rightSection}>
+          <AntDesign name="shoppingcart" size={25} color="black" />
+          <ImageBackground
+            source={require("../../assets/images/AvatarHeader.png")}
+            style={{
+              width: 30,
+              height: 30,
+              backgroundColor: "green",
+              borderRadius: 50,
+            }}
+            resizeMode="cover"
+          ></ImageBackground>
+        </View>
       </View>
     </View>
   );
@@ -41,9 +43,16 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 30,
     flexDirection: "row", // Đưa các thành phần thành hàng ngang
-    justifyContent: "space-between", // Căn giữa các thành phần
+    justifyContent: "center", // Căn giữa các thành phần
     alignItems: "center", // Canh giữa theo trục dọc (theo chiều cao)
   },
+
+  layoutContainer: {
+    width: "92%",
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+
   leftSection: {
     width: 108,
     height: 30,
